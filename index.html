@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Phonegap App</title>
+    <link rel="stylesheet" href="styles/Assignment5.css">
+</head>
+
+<body>
+    <header>Customers</header>
+    <select name="area" id="area">
+        <option selected >-----select-----</option>
+        <option value="show1">All Customers</option>
+        <option value="show2">Customer Order History</option>
+        <option value="show3">Customer Orders</option>
+    </select>
+    <section id="section1">
+        <h3>All Customers</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>City</td>
+                </tr>
+            </thead>
+            <tbody id="customerDetails"></tbody>
+        </table>
+    </section>
+    <section id="section2">
+        <h3>Customer Order History</h3>
+        <label>Enter customer ID</label>
+        <input type="text" id="id1">
+        <button onclick="getCustomerOrderHistory()">Submit</button>
+        <table>
+            <thead>
+                <tr>
+                    <td>Product Name</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody id="orderHistoryDetails"></tbody>
+        </table>
+    </section>
+    <section id="section3">
+        <h3>Customer orders</h3>
+        <label>Enter customer ID</label>
+        <input type="text" id="id2">
+        <button onclick="getOrdersForCustomer()">Submit</button>
+        <div id="orderDetails"></div>
+    </section>
+</body>
+<script src="javascript/Assignment5.js"></script>
+
+</html>
